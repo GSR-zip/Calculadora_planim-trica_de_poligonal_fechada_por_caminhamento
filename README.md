@@ -8,18 +8,18 @@ However, I only ended up building a tiny fraction of what I originally imagined 
 The section labeled primeira_versao (first_version) works, but it is completely unreadable. It was the literal first piece of code I ever wrote in my life. A more experienced developer who reviewed it to give me feedback actually asked if I hated programmers! So, I highly recommend not wasting your energy trying to decipher that specific part. At the very end of the file, you will find some sample angles and distances that you can use for testing.
 How the program works:
 It calculates the X and Y coordinates of a horizontal traverse and its total area through the following steps:
-    • Data Input: You can input angles and distances either by copying and pasting or by typing them manually.
-    • Linear Tolerance: Enter the allowable linear error ratio (e.g., 1:1000, 1:2000), which depends on the size of the surveyed land.
-    • Instrument Tolerance: Input the angular error tolerance specified by the manufacturer of the surveying equipment.
-    • Measurement Type: Choose between interior or exterior angles. The program uses this to calculate the angular error, find the difference between the ideal and measured values, and check it against the tolerance.
-    • Azimuth Distribution: Once corrected, the program distributes the azimuths (the angle relative to North or an arbitrary direction, used to find the sine and cosine for X and Y coordinates).
-    • Provisional Coordinates: The system calculates temporary coordinates using the azimuths and distances.
-    • Initial Coordinates: The user provides the starting coordinates (useful if you are within a plot and need to locate a specific point).
-    • Area Calculation: Finally, the program computes the total area based on these coordinates.
+    - Data Input: You can input angles and distances either by copying and pasting or by typing them manually.
+    - Linear Tolerance: Enter the allowable linear error ratio (e.g., 1:1000, 1:2000), which depends on the size of the surveyed land.
+    - Instrument Tolerance: Input the angular error tolerance specified by the manufacturer of the surveying equipment.
+    - Measurement Type: Choose between interior or exterior angles. The program uses this to calculate the angular error, find the difference between the ideal and measured values, and check it against the tolerance.
+    - Azimuth Distribution: Once corrected, the program distributes the azimuths (the angle relative to North or an arbitrary direction, used to find the sine and cosine for X and Y coordinates).
+    - Provisional Coordinates: The system calculates temporary coordinates using the azimuths and distances.
+    - Initial Coordinates: The user provides the starting coordinates (useful if you are within a plot and need to locate a specific point).
+    - Area Calculation: Finally, the program computes the total area based on these coordinates.
 Future Roadmap / Ideas for continuation:
-    • Vertical Surveying (Altimetry): This is quite simple in theory. The horizontal distance used in the current calculation would result from: horizontal_distance = measured_distance * cos(vertical_angle). The elevation would be: provisional_z = measured_distance * sin(vertical_angle). For vertical adjustment: correction = (final_elevation - initial_elevation) / number_of_stations, leading to final_z = provisional_z + correction.
-    • Radiation Points: Implementing a specific feature for radiation points, though the current tools already provide a solid foundation.
-    • Graphical User Interface (GUI): I tried creating a user interface but couldn't quite get it to work (lol), so a proper GUI would be a great addition.
+    - Vertical Surveying (Altimetry): This is quite simple in theory. The horizontal distance used in the current calculation would result from: horizontal_distance = measured_distance * cos(vertical_angle). The elevation would be: provisional_z = measured_distance * sin(vertical_angle). For vertical adjustment: correction = (final_elevation - initial_elevation) / number_of_stations, leading to final_z = provisional_z + correction.
+    - Radiation Points: Implementing a specific feature for radiation points, though the current tools already provide a solid foundation.
+    - Graphical User Interface (GUI): I tried creating a user interface but couldn't quite get it to work (lol), so a proper GUI would be a great addition.
 
 
 to test:
@@ -49,5 +49,3 @@ output:
 coordenates and area
 
 
-
-Gostaria de agradecer aos SRs. Wallace Barros, Sales e Sr Ender que me tiraram vária duvidas durante meu processo de aprendizagem.
