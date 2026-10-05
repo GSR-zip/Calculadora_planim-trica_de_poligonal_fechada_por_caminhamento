@@ -1,4 +1,6 @@
-ENGLISH
+
+A princípio gostaria de agradecer aos SRs. Wallace Barros, Sales e Sr Ender que me tiraram vária duvidas durante meu processo de aprendizagem.
+
 I took a Fundamental Topography course during college, where I learned how to identify and correct angular and linear errors in various types of horizontal traverses (such as open/closed traverses, radiation, supported traverses, and calculating areas using analytical methods), as well as defining coordinate points. Calculating all of this by hand is extremely tedious and inefficient. At the time, the AIs I tried couldn't handle the math (they would get lost in the process), which inspired me to create a "complete software" to solve any topographic problem.
 However, I only ended up building a tiny fraction of what I originally imagined for the program. Even so, it helped me tremendously with the calculations and with learning how to code. Since I’ve passed the course and am no longer using this script, I am making it publicly available. If you are reading this and want to use, modify, improve, or continue developing it, please feel free! If you need any help, you can count on me (it would be amazing to see this project fully completed).
 
@@ -20,31 +22,7 @@ Future Roadmap / Ideas for continuation:
     • Graphical User Interface (GUI): I tried creating a user interface but couldn't quite get it to work (lol), so a proper GUI would be a great addition.
 
 
-PORTUGÊS
-Passei pela matéria de topografia fundamental durante a faculdade, onde aprendi a encontrar e corrigir os erros angulares e distâncias de alguns tipos de poligonais planimétrica (por caminhamento, irradiação, suas áreas pelo método analítico, poligonal apoiada, entre outras) e definir a coordenada de seus pontos.
-Calculá-las à mão é extremamente trabalhoso e ineficiente, e na época as IAs que usei não conseguiam calcular (elas se perdiam no processo), por isso pensei em fazer um "softwere completo" para calcular qualquer problema topográfico.
-  
-No em tando fiz uma ínfima parcela do total que imaginei para o programa (que me ajudou muito com as contas e a entender mais sobre programação) mas eu passei na matéria e não estou usando mais este código... portanto eu a deixo disponível publicamente. Se você que está lendo isso quiser usar, modificar, melhorar ou continuar fique à vontade e se precisar de ajuda conta comigo (seria bonito ver isso aqui inteiro).
-De qualquer forma, o programa funciona assim:
-
-Calcula as coordenadas x e y de uma poligonal planimétrica e sua área.
-
-1-> Entrada de dados, onde serão fornecidos os ângulos e as distâncias (ela pode ser por cópia e cola ou digitando cada um manualmente);
-2-> Fornecer a tolerância linear (dependendo do tamanho do terreno que você ira medir ele segue uma regra da tolerância do quanto o erro é aceitável 1:1000, 1:2000…);
-3-> Fornecer a tolerância do aparelho: os aparelhos topográficos possuem uma tolerância do erro de leitura de seus ângulos (isso vem de fábrica e tem em todos os aparelhos uns mais precisos e outros menos);
-4-> escolhe o tipo de medição (utilizando ângulos internos ou externos), ela serve para calcular o erro angular, calcular a diferença entre o ideal e o que foi medido e em seguida compara com a tolerância;
-5-> Feita a correção o programa vai espalhar os azimutes (o ângulo em relação ao norte (ou uma direção arbitrária por onde obtemos o seno e o cosseno para as coordenadas x e y respectivamente);
-6-> Com os azimutes e distâncias o programa calcula as coordenadas provisórias
-7-> O usuário fornece as coordenadas iniciais (se tiver dentro de um terreno e quiser locar num ponto específico por exemplo).
-8 -> A partir disso ele calcula a área
-
-Para uma continuação pensei em adicionar ao programa a altimetria (é bem simples na teoria: a distância usada na conta atual seria resultado de uma outra conta [distancia * cos (ângulo_vertical) = distancia_usada_no_programa_atual] e a altura seria [distancia_medida * sen(angulo_vertical) = z_provisorio] e uma validação de altura (altura_final – altura inicial)/numero_de_estações = correção, z_final = correção + z_provisorio.
-
-Adicionar pontos para ser irradiação (teria que fazer uma específica mas creio que com as ferramentas daqui de pra avançar bem
-e possivelmente uma interface (tentei criar e não consegui lol)
-
 to test:
-----------------\\----------------
 input:
 1 - import
 
@@ -66,6 +44,10 @@ linear tolerance:
 
 coordenate x and y initial
 you choose (0 for exemple)
-----------------\\----------------
+
 output:
 coordenates and area
+
+
+
+Gostaria de agradecer aos SRs. Wallace Barros, Sales e Sr Ender que me tiraram vária duvidas durante meu processo de aprendizagem.
